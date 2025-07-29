@@ -48,7 +48,7 @@ INSTALLATION
 Выполнить команду в терминале (консоле):
 
 - docker-compose up -d
-- docker-compose run --rm app composer instal
+- docker-compose run --rm app composer install
 - docker-compose run --rm app php yii migrate --interactive=0
 
 Проект доступен по адресу:
