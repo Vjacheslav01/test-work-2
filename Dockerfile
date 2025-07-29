@@ -11,6 +11,7 @@ RUN set -eux; \
     && apk add --update --no-cache --virtual .build-deps \
         autoconf \
         g++ \
+        git \
         imagemagick-dev \
         libtool \
         make \
