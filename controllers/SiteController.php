@@ -86,7 +86,9 @@ class SiteController extends Controller
             return ['status' => 'error', 'message' => 'URL недоступен'];
         }
 
-        if (!Url::findOne(['original_url' => $url])) {
+        $model = Url::findOne(['original_url' => $url]);
+
+        if (!$model) {
             $model = Url::generateQr($url);
             if (!$model) {
                 return ['status' => 'error', 'message' => 'Ошибка сохранения'];
